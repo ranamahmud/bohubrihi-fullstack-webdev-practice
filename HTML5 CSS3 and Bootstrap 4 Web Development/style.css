@@ -2,3 +2,13 @@ p{
     text-color:brown;
     background-color: antiquewhite;
 }
+h3{
+    text-align: center;
+}
+form{
+    text-align: center;
+}
+
+input{
+    padding: 10px
+}
