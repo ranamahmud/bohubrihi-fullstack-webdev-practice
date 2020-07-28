@@ -33,3 +33,6 @@ function addSomething(item) {
 
 let arr_res = foods.map(addSomething);
 console.log(arr_res);
+
+let arr_square = numbers.map(function(item){return item*item;})
+console.log(arr_square);
