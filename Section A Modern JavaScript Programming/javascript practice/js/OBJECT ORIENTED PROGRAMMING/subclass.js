@@ -1,36 +1,36 @@
 // Sub Class
 // Inheritance
 
-class Person { //Base Class
+// Base Class
+class Person {
     constructor(fname, lname) {
         this.firstname = fname;
         this.lastname = lname;
     }
 
-    greeting() {
-        return `Hello ${this.firstname} ${this.lastname}!`;
+    greering() {
+        return `Hello ${this.firstname} ${this.lastname}`
     }
 }
 
-class Customer extends Person { //Sub Class
+// Sub class
+class Customer extends Person {
     constructor(fname, lname, phone, memberShip) {
         super(fname, lname);
-
         this.phone = phone;
         this.memberShip = memberShip;
     }
-
-    fullname() {
+    fullname(){
         console.log(this.firstname, this.lastname);
     }
 }
 
-let person1 = new Person("Fazle", "Rahat");
+let person1 = new Person("Rana","Mahmud");
 console.log(person1);
-console.log(person1.greeting());
-console.log(person1.fullname());
+console.log(person1.greering());
 
-let customer1 = new Customer("Rony", "Chy", "017777778888", "1234");
+let customer1 = new Customer("Rony","Chy","0177777777","1234");
+
 console.log(customer1);
-console.log(customer1.greeting());
+console.log(customer1.greering());
 console.log(customer1.fullname());
