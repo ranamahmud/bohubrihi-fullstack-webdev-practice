@@ -1,0 +1,15 @@
+.container,
+.container-fluid {
+  border: 3px solid blue;
+  padding: 10px;
+}
+
+.col,
+.col-1,
+.col-3,
+.col-4,
+.col-5,
+.col-7,
+.col-8 {
+  border: 3px solid red;
+}
