@@ -28,3 +28,5 @@ let sym1 = Symbol("Hello");
 let sym2 = Symbol("Hello");
 
 console.log(sym1 == sym2);
+console.log(sym1);
+console.log(sym2);
