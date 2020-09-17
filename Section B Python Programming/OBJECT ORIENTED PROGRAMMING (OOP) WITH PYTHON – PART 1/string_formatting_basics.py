@@ -14,4 +14,4 @@ print('I am {1} and I am {0}'.format(name,'happy'))
 
 food = 'sandwitch'
 language = 'python'
-print(f'I am {name} and I eat{food}. I don\'t believe {language} haters\n And {2**2}={4}')
+print(f'I am {name} and I eat{food}. I don\'t believe {language} haters\n And {2**2}=={4}')
