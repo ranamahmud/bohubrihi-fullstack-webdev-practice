@@ -3,52 +3,53 @@ let str;
 // Literal Character
 re = /hello/;
 re = /hello/i;
-re = /hello/i;
+re = /hell/i;
 re = /lo W/i;
 re = /loW/i;
 
-// Meta Character
+// Meta Characters
 re = /^hello/; // Must start with
 re = /hello$/; // Must end with
-re = /rld$/; // Must start and end with
-
-re = /^hello$/;
+re = /world$/;
+re = /^hello$/; // Must start and end with
 re = /^h.llo$/; // Matches any one character
-
 re = /h.llo/;
-
 re = /h*llo/; // 0 or more times
-re = /he?llo/; // Optional
 re = /he?a?llo/; // Optional
-re = /hello\?/
-str = "hello World";
+re = /hello?/; // escaping
+
+str = "Again hello World";
 str = "hello hello";
 str = "hello";
 str = "hallo";
 str = "hillo";
+str = "h llo";
 str = "hllo";
-str = "hillo hello";
-str = "hello hello";
+str = "hillo worlde";
+str = "hello worlde";
 str = "hillo";
 str = "hilo";
-str = "hllo";
-str = "h323232llo";
+str = "hhfsdhfsuillo";
 str = "hello";
 str = "hllo";
 str = "hallo";
+str = "htllo";
+str = "heallo";
+str = "hello";
+str = "hallo";
 str = "hllo";
+str = "hello";
 str = "hello?";
 
 
-console.log(re.exec(str));
 
+console.log(re.exec(str));
+reTest(re, str);
 function reTest(re, str) {
     if (re.test(str)) {
         console.log(`'${str}' matches '${re.source}'`);
-    } else {
-        console.log(`'${str}' doesn't matches '${re.source}'`);
-
+    }
+    else {
+        console.log(`'${str}' doesn't match '${re.source}'`);
     }
 }
-
-reTest(re, str);
