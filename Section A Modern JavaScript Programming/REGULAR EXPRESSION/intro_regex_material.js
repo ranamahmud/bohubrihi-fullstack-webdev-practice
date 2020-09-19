@@ -5,39 +5,38 @@ let str;
 
 re = /hello/;
 re = /Hello/;
-re = /hello/i; // i = case insensitive
-
+re = /hello/i;
 console.log(re);
 console.log(re.source);
 
-str = "HelLo World";
+str = "Hello World";
 str = "Again Hello World";
 str = "Hell World";
-str = "sdsHellosds World";
+str = "sdfsfsHelloDSfsdf";
 str = "Again Hello World Hello";
-str = "World";
-
-// exec() - Returns result in an array or null
+// exec() returns a result array null
 let result = re.exec(str);
+console.log(result);
 
-// test() - true/false
+// test()
+
 result = re.test(str);
 
-// match() - Returns array or null
-str = "Again Hello World Hello";
+console.log(result);
+
+// match() returns array or null
 
 result = str.match(re);
 
-// search() - Returns index of the first match or -1
-str = "World";
-
-result = str.search(re);
-
-// replace() - Return new string
-str = "Again Hello World Hello";
-let newstr = str.replace(re, "Hi");
-
 console.log(result);
-console.log(str);
-console.log(re.source);
-console.log(newstr);
+
+// search() - Returns index of the first match or -1
+str = "World"
+result = str.search(re);
+console.log(result);
+
+// replace() - Returns a new string
+str = "Again Hello World Hello";
+
+let newStr = str.replace(re, "Hi");
+console.log(newStr);
