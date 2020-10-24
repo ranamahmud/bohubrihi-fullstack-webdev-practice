@@ -26,3 +26,19 @@ print(q[0:5])
 print(q[1:3])
 print(q[0:-2])
 print(q[1:-1])
+print(q[:4])
+print(q[4:])
+print(q)
+
+a = [1,2,3,4]
+b = ['x','y','z']
+ab = a + b
+print(ab)
+
+x = ['p','q','r']
+new_x = x * 2
+print(new_x)
+
+p = ['a',0, 9]
+del p[0]
+print(p)
